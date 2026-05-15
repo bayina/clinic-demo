@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Northridge Family Clinic — Demo Site</title>
+  <meta name="description" content="A sample portfolio demo of a small clinic landing page built by Chandhini Software Solutions LLC." />
+  <meta name="robots" content="index, follow" />
+  <link rel="canonical" href="https://clinic.chandhini.com/" />
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Northridge Family Clinic — Demo Site" />
+  <meta property="og:description" content="A sample portfolio demo of a small clinic landing page built by Chandhini Software Solutions LLC." />
+  <meta property="og:url" content="https://clinic.chandhini.com/" />
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Source+Sans+3:wght@400;500;600;700&family=Source+Serif+Pro:wght@600;700&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="assets/css/styles.css" />
+</head>
+<body>
+
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <header class="site-header">
+    <div class="container header-row">
+      <a class="brand" href="#top">Northridge Family Clinic</a>
+      <nav aria-label="Primary">
+        <ul class="nav"><li><a href="#services">Services</a></li><li><a href="#appointments">Appointments</a></li><li><a href="#faq">FAQ</a></li><li><a href="#contact">Contact</a></li></ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+    <section id="top" class="hero">
+      <div class="container">
+        <p class="demo-badge">Sample portfolio demo</p>
+        <h1>Northridge Family Clinic</h1>
+        <p class="tagline">Compassionate care, close to home.</p>
+        <div class="cta-row">
+          <a class="btn primary" href="#appointments">Request Appointment</a>
+          <a class="btn ghost" href="tel:+10000000000">Call Front Desk</a>
+        </div>
+        <p class="demo-note">Demo only. Not a real medical provider. Do not use for actual health information.</p>
+      </div>
+    </section>
+
+    <div class="container">
+
+  <section id="services" class="section">
+    <h2>Services</h2>
+    <p class="lead">Primary care, preventive visits, and minor procedures for the whole family.</p>
+            <div class="cards">
+              <article class="card"><h3>Annual Physicals</h3><p class="muted">Wellness visits for adults and children.</p></article>
+              <article class="card"><h3>Acute Care</h3><p class="muted">Colds, infections, injuries.</p></article>
+              <article class="card"><h3>Chronic Care</h3><p class="muted">Diabetes, blood pressure, ongoing follow-up.</p></article>
+              <article class="card"><h3>Immunizations</h3><p class="muted">Routine and travel.</p></article>
+            </div>
+  </section>
+
+  <section id="appointments" class="section">
+    <h2>Appointments</h2>
+    <p class="lead">Most visits are available same week. Use the form, or call the front desk.</p>
+            <form aria-label="Appointment request form" onsubmit="event.preventDefault(); alert('Demo only — no booking sent.');">
+              <label>Name<br/><input type="text" required aria-required="true"/></label>
+              <label>Phone<br/><input type="tel" required aria-required="true"/></label>
+              <label>Preferred date<br/><input type="date" required aria-required="true"/></label>
+              <label>Reason for visit<br/><textarea rows="3"></textarea></label>
+              <button type="submit" class="btn primary">Request Appointment</button>
+            </form>
+            <p class="note">Form is a demo. Submissions go nowhere.</p>
+  </section>
+
+  <section id="faq" class="section">
+    <h2>FAQ</h2>
+    <details><summary>Do you accept insurance?</summary><p>Demo answer: Most major plans. Call to confirm.</p></details>
+            <details><summary>Are walk-ins available?</summary><p>Demo answer: Yes, for acute concerns when slots open.</p></details>
+            <details><summary>How do I get records released?</summary><p>Demo answer: Complete a release-of-information form at the front desk.</p></details>
+  </section>
+
+  <section id="contact" class="section">
+    <h2>Contact</h2>
+    <p>Front desk: <a href="tel:+10000000000">(000) 000-0000</a><br/>
+               Email: <a href="mailto:demo@example.com">demo@example.com</a></p>
+            <address>
+              789 Sample Boulevard<br/>
+              Overland Park, KS 66210
+            </address>
+            <p class="note">Demo contact information.</p>
+  </section>
+
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>Demo site by <a href="https://chandhini.com">Chandhini Software Solutions LLC</a>.
+         Source on <a href="https://github.com/bayina/clinic-demo">GitHub</a>.</p>
+      <p class="muted">Not a real business. All content is illustrative.</p>
+    </div>
+  </footer>
+
+  <script src="assets/js/main.js"></script>
+</body>
+</html>
