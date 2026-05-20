@@ -62,29 +62,79 @@
   </section>
 
   <section id="appointments" class="section">
-    <h2>Appointments</h2>
-    <p class="lead">Most visits are available same week. Use the form, or call the front desk.</p>
+    <h2>Request an Appointment</h2>
+    <p class="lead">Most visits are available within the same week. Use the form below, or call the front desk during business hours. New patients welcome.</p>
             <form aria-label="Appointment request form" onsubmit="event.preventDefault(); alert('Demo only — no booking sent.');">
-              <label>Name<br/><input type="text" required aria-required="true"/></label>
-              <label>Phone<br/><input type="tel" required aria-required="true"/></label>
-              <label>Preferred date<br/><input type="date" required aria-required="true"/></label>
-              <label>Reason for visit<br/><textarea rows="3"></textarea></label>
+              <label>Full name<br/>
+                <input type="text" name="name" autocomplete="name" required aria-required="true" placeholder="First and last name"/>
+              </label>
+              <label>Date of birth<br/>
+                <input type="date" name="dob" autocomplete="bday" required aria-required="true"/>
+              </label>
+              <label>Phone<br/>
+                <input type="tel" name="phone" autocomplete="tel" inputmode="tel" required aria-required="true" placeholder="(000) 000-0000"/>
+              </label>
+              <label>Email (optional)<br/>
+                <input type="email" name="email" autocomplete="email" placeholder="you@example.com"/>
+              </label>
+              <label>Preferred date<br/>
+                <input type="date" name="preferred_date" required aria-required="true"/>
+              </label>
+              <label>Preferred time<br/>
+                <select name="preferred_time" aria-label="Preferred appointment time">
+                  <option value="morning">Morning (8–11 AM)</option>
+                  <option value="midday">Midday (11 AM–1 PM)</option>
+                  <option value="afternoon">Afternoon (1–4 PM)</option>
+                  <option value="any">Any available</option>
+                </select>
+              </label>
+              <label>New or returning patient?<br/>
+                <select name="patient_type" aria-label="New or returning patient">
+                  <option value="new">New patient</option>
+                  <option value="returning">Returning patient</option>
+                </select>
+              </label>
+              <label>Reason for visit<br/>
+                <textarea name="reason" rows="3" placeholder="A brief description helps us schedule the right time."></textarea>
+              </label>
               <button type="submit" class="btn primary">Request Appointment</button>
             </form>
-            <p class="note">Form is a demo. Submissions go nowhere.</p>
+            <p class="note">Demo form. Submissions are not sent. Real version would connect to a HIPAA-compliant intake system.</p>
   </section>
 
   <section id="faq" class="section">
-    <h2>FAQ</h2>
-    <details><summary>Do you accept insurance?</summary><p>Demo answer: Most major plans. Call to confirm.</p></details>
-            <details><summary>Are walk-ins available?</summary><p>Demo answer: Yes, for acute concerns when slots open.</p></details>
-            <details><summary>How do I get records released?</summary><p>Demo answer: Complete a release-of-information form at the front desk.</p></details>
+    <h2>Frequently Asked Questions</h2>
+    <details>
+      <summary>Do you accept insurance?</summary>
+      <p>We accept most major commercial plans, Medicare, and many state plans. Bring your insurance card to your first visit, and call the front desk if you'd like us to verify coverage in advance.</p>
+    </details>
+    <details>
+      <summary>Are walk-ins available?</summary>
+      <p>Yes, walk-ins are accepted for acute concerns (sudden illness, minor injuries) when an opening is available. For physicals, chronic-care follow-up, and lab work, please schedule ahead.</p>
+    </details>
+    <details>
+      <summary>What should I bring to my first visit?</summary>
+      <p>A photo ID, your insurance card, a list of current medications and dosages, and any recent lab work or specialist notes you have copies of.</p>
+    </details>
+    <details>
+      <summary>How do I get a prescription refill?</summary>
+      <p>Call the front desk, message your provider through the patient portal, or have your pharmacy send a refill request. Most non-controlled refills are handled within one business day.</p>
+    </details>
+    <details>
+      <summary>How do I get my records released?</summary>
+      <p>Fill out a release-of-information form at the front desk or download it from the patient portal. We can send records electronically or by secure fax.</p>
+    </details>
+    <details>
+      <summary>Do you see children?</summary>
+      <p>Yes. We provide well-child visits, immunizations, sports physicals, and same-day sick visits for children of all ages.</p>
+    </details>
+    <p class="note">Sample FAQ content for a portfolio demo. Not real medical guidance.</p>
   </section>
 
   <section id="contact" class="section">
     <h2>Contact</h2>
     <p>Front desk: <a href="tel:+10000000000">(000) 000-0000</a><br/>
-               Email: <a href="mailto:demo@example.com">demo@example.com</a></p>
+               Email: <a href="mailto:admin@chandhini.com">admin@chandhini.com</a></p>
             <address>
               789 Sample Boulevard<br/>
               Overland Park, KS 66210
